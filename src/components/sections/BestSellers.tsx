@@ -59,7 +59,7 @@ export default function BestSellers() {
       <div className="max-w-[1600px] mx-auto">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16">
           <div>
             <span className="text-teal text-[0.65rem] tracking-[0.2em] font-bold uppercase mb-4 block">
               Popular Picks
