@@ -29,7 +29,7 @@ export default function DesignIdeas() {
       <div className="max-w-[1600px] mx-auto">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16">
           <div>
             <span className="text-teal text-[0.65rem] tracking-[0.2em] font-bold uppercase mb-4 block">
               Room Inspiration
@@ -47,7 +47,7 @@ export default function DesignIdeas() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 h-[60vh] md:h-[70vh]">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:h-[70vh]">
           {rooms.map((room, index) => (
             <motion.div
               key={room.title}
@@ -55,7 +55,7 @@ export default function DesignIdeas() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="group relative overflow-hidden cursor-pointer rounded-[32px] shadow-sm hover:shadow-2xl transition-shadow duration-700"
+              className="group relative overflow-hidden cursor-pointer rounded-[32px] shadow-sm hover:shadow-2xl transition-shadow duration-700 h-[45vh] md:h-auto"
             >
               <div className="absolute inset-0 transition-transform duration-1000 ease-out group-hover:scale-105">
                 <img
@@ -70,11 +70,11 @@ export default function DesignIdeas() {
               
               {/* Content */}
               <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                <div className="transform transition-transform duration-500 ease-out group-hover:-translate-y-4">
-                  <h3 className="font-serif text-2xl text-white mb-4 drop-shadow-md">
+                <div className="transform transition-transform duration-500 ease-out md:group-hover:-translate-y-4">
+                  <h3 className="font-serif text-2xl text-white mb-2 md:mb-4 drop-shadow-md">
                     {room.title}
                   </h3>
-                  <div className="opacity-0 translate-y-4 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0">
+                  <div className="transition-all duration-500 ease-out opacity-100 translate-y-0 md:opacity-0 md:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0">
                     <Link href="/rooms" className="inline-block glass text-slate hover:bg-white hover:text-teal px-6 py-3 rounded-full text-xs font-semibold tracking-wider transition-colors shadow-[0_8px_32px_rgba(45,156,149,0.2)]">
                       View Space
                     </Link>
