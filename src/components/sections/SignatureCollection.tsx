@@ -8,7 +8,7 @@ export default function SignatureCollection() {
       {/* Decorative Blob */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-ice rounded-full blur-[120px] opacity-60 translate-x-1/2 -translate-y-1/4 pointer-events-none" />
 
-      <div className="flex flex-col lg:flex-row items-center gap-24 max-w-[1600px] mx-auto relative z-10">
+      <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12 lg:gap-24 max-w-[1600px] mx-auto relative z-10">
         
         {/* Text Content */}
         <div className="lg:w-5/12 flex flex-col justify-center">
