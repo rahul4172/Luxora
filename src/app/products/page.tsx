@@ -201,7 +201,7 @@ export default function ProductsPage() {
                       className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110 mix-blend-multiply"
                     />
                     
-                    <div className="absolute bottom-6 right-6 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out z-20">
+                    <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 transition-all duration-500 ease-out z-20">
                       <button 
                         onClick={(e) => handleAddToCart(product, e)}
                         className="w-12 h-12 rounded-full bg-white text-teal flex items-center justify-center shadow-lg hover:bg-teal hover:text-white transition-colors"
