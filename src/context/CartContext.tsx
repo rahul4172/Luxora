@@ -71,16 +71,17 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     });
 
     // Handle flying animation if event is provided
-    if (e) {
+    if (e && e.currentTarget) {
       const cartIcon = document.getElementById("cart-icon");
       if (cartIcon) {
         const cartRect = cartIcon.getBoundingClientRect();
+        const sourceRect = (e.currentTarget as HTMLElement).getBoundingClientRect();
         
         const newFlyingItem: FlyingItem = {
           id: flyingIdCounter,
           image: newItem.image,
-          startX: e.clientX,
-          startY: e.clientY,
+          startX: sourceRect.left + sourceRect.width / 2,
+          startY: sourceRect.top + sourceRect.height / 2,
           endX: cartRect.left + cartRect.width / 2,
           endY: cartRect.top + cartRect.height / 2,
         };
