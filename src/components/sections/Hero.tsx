@@ -108,7 +108,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="absolute left-1/2 -translate-x-1/2 bottom-12 flex flex-col items-center gap-4"
+          className="absolute left-1/2 -translate-x-1/2 bottom-12 hidden md:flex flex-col items-center gap-4"
         >
           <span className="text-slate/40 text-[10px] tracking-widest uppercase whitespace-nowrap">Scroll Down</span>
           <div className="w-[1px] h-16 bg-slate/20 relative overflow-hidden">
