@@ -48,7 +48,7 @@ export default function Testimonials() {
   }, [emblaApi]);
 
   return (
-    <section className="bg-background w-full py-32 px-4 md:px-12 lg:px-24 overflow-hidden relative">
+    <section className="bg-background w-full py-16 md:py-24 lg:py-32 px-4 md:px-12 lg:px-24 overflow-hidden relative">
       <div className="max-w-[1600px] mx-auto relative z-10 flex flex-col items-center">
         
         <motion.div
@@ -61,7 +61,7 @@ export default function Testimonials() {
           <span className="text-teal text-[0.65rem] tracking-[0.2em] font-bold uppercase mb-4 block">
             Client Stories
           </span>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-slate drop-shadow-sm">
+          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-slate drop-shadow-sm">
             Beautiful Homes
           </h2>
         </motion.div>
@@ -78,10 +78,10 @@ export default function Testimonials() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                    className="glass rounded-[40px] p-10 md:p-16 flex flex-col items-center text-center relative"
+                    className="glass rounded-[40px] p-6 sm:p-10 md:p-16 flex flex-col items-center text-center relative"
                   >
-                    <Quote className="absolute top-8 left-8 w-12 h-12 text-teal/10 rotate-180" />
-                    <Quote className="absolute bottom-8 right-8 w-12 h-12 text-teal/10" />
+                    <Quote className="absolute top-4 left-4 md:top-8 md:left-8 w-8 h-8 md:w-12 md:h-12 text-teal/10 rotate-180" />
+                    <Quote className="absolute bottom-4 right-4 md:bottom-8 md:right-8 w-8 h-8 md:w-12 md:h-12 text-teal/10" />
                     
                     <p className="font-serif text-xl md:text-2xl text-slate/80 leading-relaxed mb-10 max-w-2xl relative z-10">
                       "{testimonial.quote}"
@@ -109,7 +109,7 @@ export default function Testimonials() {
           </div>
 
           {/* Navigation Buttons */}
-          <div className="absolute top-1/2 -translate-y-1/2 -left-4 md:-left-12 lg:-left-20">
+          <div className="hidden md:flex absolute top-1/2 -translate-y-1/2 -left-12 lg:-left-20">
             <button
               onClick={scrollPrev}
               className="w-12 h-12 rounded-full bg-white text-slate hover:text-teal shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -117,7 +117,7 @@ export default function Testimonials() {
               <ChevronLeft className="w-5 h-5 stroke-[1.5]" />
             </button>
           </div>
-          <div className="absolute top-1/2 -translate-y-1/2 -right-4 md:-right-12 lg:-right-20">
+          <div className="hidden md:flex absolute top-1/2 -translate-y-1/2 -right-12 lg:-right-20">
             <button
               onClick={scrollNext}
               className="w-12 h-12 rounded-full bg-white text-slate hover:text-teal shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110"

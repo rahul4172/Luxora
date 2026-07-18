@@ -46,7 +46,7 @@ export default function Hero() {
             <span className="text-teal text-xs tracking-[0.2em] font-semibold uppercase mb-6 block">
               Scandinavian Elegance
             </span>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-[5.5rem] text-slate leading-[1.05] mb-6 drop-shadow-sm">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] text-slate leading-[1.05] mb-6 drop-shadow-sm">
               Crafting <br />
               Timeless <br />
               Living Spaces
@@ -66,12 +66,12 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-wrap items-center gap-6"
+            className="flex flex-col sm:flex-row items-stretch sm:items-center w-full sm:w-auto gap-4 sm:gap-6"
           >
-            <button className="bg-teal hover:bg-slate text-white px-8 py-4 rounded-full text-sm font-semibold tracking-wider transition-all duration-300 shadow-[0_8px_20px_rgba(45,156,149,0.3)] hover:shadow-xl hover:-translate-y-1">
+            <button className="bg-teal hover:bg-slate text-white px-8 py-4 rounded-full text-sm font-semibold tracking-wider transition-all duration-300 shadow-[0_8px_20px_rgba(45,156,149,0.3)] hover:shadow-xl hover:-translate-y-1 w-full sm:w-auto text-center">
               Explore Collection
             </button>
-            <button className="flex items-center space-x-3 text-slate hover:text-teal px-6 py-4 rounded-full transition-all group glass">
+            <button className="flex items-center justify-center space-x-3 text-slate hover:text-teal px-6 py-4 rounded-full transition-all group glass w-full sm:w-auto">
               <span className="text-sm font-semibold tracking-wider">Watch Film</span>
               <div className="bg-slate group-hover:bg-teal text-white rounded-full p-2 transition-colors">
                 <Play className="w-3 h-3 fill-white" />

@@ -24,7 +24,7 @@ const categories = [
 
 export default function Categories() {
   return (
-    <section id="categories" className="bg-background py-24 w-full px-4 md:px-12 lg:px-24">
+    <section id="categories" className="bg-background py-12 md:py-24 w-full px-4 md:px-12 lg:px-24">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-[1600px] mx-auto">
         {categories.map((category, index) => (
           <motion.div

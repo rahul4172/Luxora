@@ -25,7 +25,7 @@ const rooms = [
 
 export default function DesignIdeas() {
   return (
-    <section id="inspiration" className="bg-secondary w-full py-32 px-4 md:px-12 lg:px-24 overflow-hidden">
+    <section id="inspiration" className="bg-secondary w-full py-16 md:py-24 lg:py-32 px-4 md:px-12 lg:px-24 overflow-hidden">
       <div className="max-w-[1600px] mx-auto">
         
         {/* Header */}
@@ -34,7 +34,7 @@ export default function DesignIdeas() {
             <span className="text-teal text-[0.65rem] tracking-[0.2em] font-bold uppercase mb-4 block">
               Room Inspiration
             </span>
-            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-slate drop-shadow-sm">
+            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-slate drop-shadow-sm">
               Design Ideas for You
             </h2>
           </div>

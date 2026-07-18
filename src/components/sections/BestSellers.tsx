@@ -55,7 +55,7 @@ export default function BestSellers() {
   };
 
   return (
-    <section id="best-sellers" className="bg-background w-full py-32 px-4 md:px-12 lg:px-24 overflow-hidden relative">
+    <section id="best-sellers" className="bg-background w-full py-16 md:py-24 lg:py-32 px-4 md:px-12 lg:px-24 overflow-hidden relative">
       <div className="max-w-[1600px] mx-auto">
         
         {/* Header */}
@@ -64,7 +64,7 @@ export default function BestSellers() {
             <span className="text-teal text-[0.65rem] tracking-[0.2em] font-bold uppercase mb-4 block">
               Popular Picks
             </span>
-            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-slate drop-shadow-sm">
+            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-slate drop-shadow-sm">
               Best Sellers
             </h2>
           </div>

@@ -16,11 +16,11 @@ export default function Consultation() {
   };
 
   return (
-    <section id="contact" className="bg-secondary w-full py-32 px-4 md:px-12 lg:px-24 overflow-hidden relative">
+    <section id="contact" className="bg-secondary w-full py-16 md:py-24 lg:py-32 px-4 md:px-12 lg:px-24 overflow-hidden relative">
       <div className="max-w-[1600px] mx-auto flex flex-col lg:flex-row rounded-[40px] overflow-hidden shadow-[0_40px_80px_rgba(34,52,60,0.08)] bg-white relative z-10">
         
         {/* Left Image */}
-        <div className="lg:w-1/2 relative h-[50vh] lg:h-auto">
+        <div className="lg:w-1/2 relative h-[25vh] md:h-[40vh] lg:h-auto">
           <div className="absolute inset-0 bg-gradient-to-r from-slate/20 to-transparent z-10 mix-blend-multiply" />
           <img
             src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=1200"
@@ -30,7 +30,7 @@ export default function Consultation() {
         </div>
 
         {/* Right Form */}
-        <div className="lg:w-1/2 bg-gradient-to-br from-ice to-white p-12 md:p-20 flex flex-col justify-center relative">
+        <div className="lg:w-1/2 bg-gradient-to-br from-ice to-white p-6 sm:p-8 md:p-12 lg:p-20 flex flex-col justify-center relative">
           
           {/* Decorative element */}
           <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-aqua/50 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
@@ -45,7 +45,7 @@ export default function Consultation() {
             <span className="text-teal text-[0.65rem] tracking-[0.2em] font-bold uppercase mb-4 block">
               Work With Us
             </span>
-            <h2 className="font-serif text-4xl md:text-5xl text-slate mb-6 leading-tight">
+            <h2 className="font-serif text-3xl md:text-5xl text-slate mb-6 leading-tight">
               Book a Private <br /> Consultation
             </h2>
             <p className="text-slate/60 text-sm mb-12 max-w-md leading-relaxed">
