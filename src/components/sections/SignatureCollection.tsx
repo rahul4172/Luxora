@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function SignatureCollection() {
   return (
-    <section id="collections" className="bg-secondary w-full py-32 px-4 md:px-12 lg:px-24 overflow-hidden relative">
+    <section id="collections" className="bg-secondary w-full py-16 md:py-24 lg:py-32 px-4 md:px-12 lg:px-24 overflow-hidden relative">
       {/* Decorative Blob */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-ice rounded-full blur-[120px] opacity-60 translate-x-1/2 -translate-y-1/4 pointer-events-none" />
 
@@ -21,7 +21,7 @@ export default function SignatureCollection() {
             <span className="text-teal text-[0.65rem] tracking-[0.2em] font-bold uppercase mb-8 block">
               Our Collection
             </span>
-            <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl text-slate leading-[1.05] mb-8">
+            <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl text-slate leading-[1.05] mb-8">
               Signature <br /> Collection
             </h2>
             <p className="text-slate/70 text-base leading-relaxed max-w-sm mb-12 font-light">
@@ -29,14 +29,14 @@ export default function SignatureCollection() {
               Made from the finest materials. <br />
               Designed to last generations.
             </p>
-            <button className="bg-white border border-teal/20 text-slate hover:border-teal hover:text-teal px-10 py-4 rounded-full text-xs font-semibold tracking-widest uppercase transition-all duration-500 shadow-[0_8px_30px_rgba(45,156,149,0.06)] hover:shadow-[0_12px_40px_rgba(45,156,149,0.15)] hover:-translate-y-1">
+            <button className="block w-fit bg-white border border-teal/20 text-slate hover:border-teal hover:text-teal px-10 py-4 rounded-full text-xs font-semibold tracking-widest uppercase transition-all duration-500 shadow-[0_8px_30px_rgba(45,156,149,0.06)] hover:shadow-[0_12px_40px_rgba(45,156,149,0.15)] hover:-translate-y-1">
               Discover More
             </button>
           </motion.div>
         </div>
 
         {/* Image Content */}
-        <div className="lg:w-7/12 w-full relative h-[60vh] md:h-[80vh]">
+        <div className="lg:w-7/12 w-full relative aspect-[4/3] sm:aspect-video md:aspect-auto md:h-[80vh] mt-12 lg:mt-0">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
